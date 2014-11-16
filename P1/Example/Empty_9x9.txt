@@ -1,0 +1,12 @@
+# Original Sudoku
+X X X   X X X   X X X
+X X X   X X X   X X X
+X X X   X X X   X X X
+
+X X X   X X X   X X X
+X X X   X X X   X X X
+X X X   X X X   X X X
+
+X X X   X X X   X X X
+X X X   X X X   X X X
+X X X   X X X   X X X

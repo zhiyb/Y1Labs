@@ -1,0 +1,25 @@
+# Original Sudoku
+X X 9   X X 5   X X 1
+X 6 X   X X 2   3 X X
+X X 2   X 8 X   X 9 X
+
+6 X X   X X X   X 1 5
+X X 7   X X X   6 X X
+2 8 X   X X X   X X 3
+
+X 7 X   X 9 X   5 X X
+X X 6   5 X X   X 8 X
+3 X X   4 X X   1 X X
+
+# Solved Sudoku
+8 3 9   7 6 5   2 4 1
+7 6 4   9 1 2   3 5 8
+5 1 2   3 8 4   7 9 6
+
+6 4 3   2 7 9   8 1 5
+1 9 7   8 5 3   6 2 4
+2 8 5   1 4 6   9 7 3
+
+4 7 1   6 9 8   5 3 2
+9 2 6   5 3 1   4 8 7
+3 5 8   4 2 7   1 6 9

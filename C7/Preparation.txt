@@ -1,0 +1,24 @@
+2. Preparation
+1. What does the acronym UART stand for?
+Universal asynchronous receiver/transmitter
+2. What baud rates are supported by the UART for serial communication?
+300 600 1200 1800 2400 4800 7200 9600 14400 19200 38400 57600 115200 230400 460800 921600
+Usually used: 9600 to 115200
+12MHz crystal support: below(include) 19200
+3. When an 8-bit ASCII character is transmitted over the UART howmany bits are sent, and what does each one represent?
+Minimum: 1(Start) + 8(Data) + 1(Stop)
+Maximum: 1(Start) + 8(Data) + 1(Parity) + 2(Stop)
+4. How many devices can be connected to the UART simultaneously?
+2, a master and a slave
+5. What does the acronym SPI stand for?
+Serial Peripheral Interface
+6. What clock rates are supported by the SPI for serial communication?
+(Up to 100 MHz) 100 Mbit/s 12.5 MB/s <wikipeida.org>
+7. When an 8-bit ASCII character is transmitted over the SPI how many bits are sent, and what does each one represent?
+8(Data) + 1(Acknowledge)
+8. How many devices can be connected to the SPI simultaneously?
+In theory, infinity
+9. What does the acronym I2C stand for?
+10. What clock rates are supported by the I2C for serial communication?
+11. When an 8-bit ASCII character is transmitted over the I2C how many bits are sent, and what does each one represent?
+12. How many devices can be connected to the I2C simultaneously?

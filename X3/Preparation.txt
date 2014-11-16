@@ -1,0 +1,27 @@
+2. Preparation
+2.1 Capacitor Discharge
+Q> What is meant by a 'polarised' electronic component? What does this mean with respect to a capacitor? Is an electrolytic capacitor a polarised component?
+A> A 'polarised' electronic component has specified current flow direction, it cannot be inversely connected. A kind of capacitor (e.g. electrolytic capacitor) is 'polarised', it need to be connected with the right p.d. direction.
+Q> What is meant by the tolerance on a capacitor's capacitance? What is a typical tolerance for an electrolytic capacitor rated at 100uF and 50V?
+A> The tolerance of a capacitor is the range of varies of its capacitance, as the actual capacitance cannot be as accurate as the designed capacitance.
+Datasheet: http://www.farnell.com/datasheets/94060.pdf
+A typical tolerance is +/- 20% (120Hz/+20C)
+Q> What is a suitable value for tour chosen resistance?
+A> It is a 100uF capacitor, I want it discharge to 37% at t = RC = 5s, R = 50k, I0 = 5 / 50k = 0.1mA
+Q> What power supply voltage is most suitable for this exercise?
+A> 5V, as it is easier to calcuate, and not too large
+Q> What measurements do you propose to make and how will you analysis them? Why will this give the most accurate value of capacitance?
+A> I need to measure the current of the circuit at time constant(5s) and I0, use formulae to calculate the capacitance, repeat the measurment more times and take the average value.
+Q> How do you propose to evaluate the uncertainty in the capacitance?
+A> (Measurement - Standard) / Standard
+2.2 Chaotic Oscillator
+Q> What is meant by 'period doubling'?
+A>
+Q> What is meant by 'bifurcation' and 'bifurcation diagram'?
+A>
+Q> What is meant by resonance?
+A>
+Q> What is meant by 'fractal' and 'self-similarity'?
+A>
+Q> What is a 'Feigenbaum number'?
+A>

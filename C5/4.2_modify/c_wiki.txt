@@ -1,0 +1,25 @@
+In computing, C (pronounced like the letter C) is a general-purpose programming language 
+initially developed by Dennis Ritchie between 1969 and 1973 at Bell Labs.[4] Its design 
+provides constructs that map efficiently to typical machine instructions, and therefore it 
+found lasting use in applications that had formerly been coded in assembly language, most 
+notably system software like the Unix computer operating system.
+
+C is one of the most widely used programming languages of all time, and there are 
+very few computer architectures for which a C compiler does not exist.
+
+Many later languages have borrowed directly or indirectly from C, including: C#, D, Go, 
+Java, JavaScript, Limbo, LPC, Perl, PHP, Python, and Unix's C Shell. The most pervasive 
+influence on these languages has been syntactical, and they tend to combine the 
+recognizable expression and statement syntax of C with underlying type systems and data 
+models that can be radically different. C++ started as a preprocessor for C and is 
+currently nearly a superset of C.
+
+Before there was an official standard for C, many users and implementors relied on an 
+informal specification contained in a book by Ritchie and Brian Kernighan; that version is 
+generally referred to as "K&R" C. In 1989 the American National Standards Institute 
+published a standard for C (generally called "ANSI C" or "C89"). The next year, the same 
+specification was approved by the International Organization for Standardization as an 
+international standard (generally called "C90"). ISO later released an extension to the 
+internationalization support of the standard in 1995, and a revised standard (known as 
+"C99") in 1999. The current version of the standard (now known as "C11") was approved in 
+December of 2011. Adapted from Wikipedia C_(programming_language) 

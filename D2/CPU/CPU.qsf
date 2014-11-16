@@ -1,0 +1,86 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2012 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 12.0 Build 178 05/31/2012 SJ Full Version
+# Date created = 22:34:48  January 14, 2014
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		CPU_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY MAX3000A
+set_global_assignment -name DEVICE "EPM3064ALC44-10"
+set_global_assignment -name TOP_LEVEL_ENTITY CPU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 12.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:34:48  JANUARY 14, 2014"
+set_global_assignment -name LAST_QUARTUS_VERSION 12.0
+set_global_assignment -name SYSTEMVERILOG_FILE sequencer.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ram.sv
+set_global_assignment -name SYSTEMVERILOG_FILE pc.sv
+set_global_assignment -name SOURCE_FILE opcodes.h
+set_global_assignment -name SYSTEMVERILOG_FILE ir.sv
+set_global_assignment -name SYSTEMVERILOG_FILE cpu.sv
+set_global_assignment -name SYSTEMVERILOG_FILE alu.sv
+set_global_assignment -name DEVICE_FILTER_PACKAGE PLCC
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 44
+set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL "Synplify Pro"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (SystemVerilog)"
+set_global_assignment -name MAX7000_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name MAX7000_OPTIMIZATION_TECHNIQUE AREA
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS OFF
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 10
+set_global_assignment -name STATE_MACHINE_PROCESSING "MINIMAL BITS"
+set_global_assignment -name VERILOG_INPUT_VERSION SYSTEMVERILOG_2005
+set_global_assignment -name INFER_RAMS_FROM_RAW_LOGIC ON
+set_global_assignment -name USE_LOGICLOCK_CONSTRAINTS_IN_BALANCING OFF
+set_global_assignment -name SYNTHESIS_SEED 2
+set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name AUTO_PARALLEL_EXPANDERS OFF
+set_global_assignment -name MAX7000_FANIN_PER_CELL 60
+set_location_assignment PIN_43 -to clock
+set_location_assignment PIN_1 -to n_reset
+set_location_assignment PIN_21 -to sysbus[0]
+set_location_assignment PIN_20 -to sysbus[1]
+set_location_assignment PIN_19 -to sysbus[2]
+set_location_assignment PIN_4 -to sysbus[3]
+set_location_assignment PIN_5 -to sysbus[4]
+set_location_assignment PIN_6 -to sysbus[5]
+set_location_assignment PIN_8 -to sysbus[6]
+set_location_assignment PIN_9 -to sysbus[7]
+set_location_assignment PIN_39 -to RAM_NCE
+set_location_assignment PIN_34 -to RAM_NWE
+set_location_assignment PIN_33 -to LED
+set_location_assignment PIN_37 -to RAM_NOE
+set_location_assignment PIN_31 -to SW
+set_global_assignment -name AUTO_RESOURCE_SHARING ON
+set_global_assignment -name DISABLE_REGISTER_MERGING_ACROSS_HIERARCHIES ON
+set_location_assignment PIN_24 -to RAM_ADDRCP

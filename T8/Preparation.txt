@@ -1,0 +1,41 @@
+AM - Amplitude Modulation
+	Advantages:
+	Simple non-coherent demodulator circuit
+
+	Disadvantages:
+	Wasteful of power since the carrier consumes lots of transmit power but conveys no information (information is conveyed by the sidebands).
+	Wasteful of bandwidth since the AM signal bandwidth is double that of the message.
+
+DSBSC - Double Side-Band Suppress Carrier
+	Advantages:
+	Power efficient since the carrier is suppressed and all power is consumed by the sidebands.
+
+	Disadvantages:
+	More complex coherent demodulator circuit is required to obtain carrier phase.
+	Attenuation occurs if carrier phase is estimated incorrectly.
+	Wasteful of bandwidth since the AM signal bandwidth is still double that of the message.
+
+QAM - Quadrature Amplitude Modulation
+	Advantages:
+	QAM improves the bandwidth efficiency of DSBSC by transmitting two message signals vmi(t) and vmq(t) in the same band, by using in-phase and quadrature-phase carriers having the same frequency.
+	The QAM signal bandwidth is double the maximum of the two message signal bandwidths.
+
+	Disadvantages:
+	The quadrature message signal vmq(t) must be initially turned off in order to allow the Costas loop to perform carrier recovery.
+
+FM - Frequency Modulation
+	Advantages:
+	A major advantage of FM in a communications circuit, compared for example with AM, is the possibility of improved Signal-to-noise ratio (SNR).
+	An FM signal can also be used to carry a stereo signal.
+	Switching amplifiers use less battery power and typically cost less than a linear amplifier.
+
+ASK - Amplitude Shift Keying
+BPSK - Phase Shift Keying
+FSK - Frequency Shift Keying
+
+In all schemes, noise can cause bit errors in the receiver.
+The Bit Error Ratio (BER) depends on the ratio of the transmission power to the channel's noise power.
+In ASK, PSK, the transmission power per bit required to achieve a particular low BER increases with M.
+In FSK, the transmission power per bit required to achieve a particular low BER reduces with M. Hence, FSK is more power efficient than ASK, PSK.
+ASK can be demodulated using a simple envelope detector, whereas PSK require coherent detection.
+(M, i.e. number of amplitudes, phases or frequencies)

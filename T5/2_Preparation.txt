@@ -1,0 +1,16 @@
+2.1 Introduction
+Q) Why the measurement circuit used is able to measure the magnetic behaviours? Can you propose an alternative system that is able to characterise magnetic materials?
+A) The circuit can be used to monitor the magnetize voltage and the integration of induced emf in the process of magnetizing and demagnetizing a sample ferromagnetic material ring, also by using equations, the behavious of the sample material can be measured.
+Q) What are soft and hard magnetic materials? How they are defined?
+A) Magnetically "soft" materials can be magnetized but do not tend to stay magnetized, and magnetically "hard" materials do.
+<http://en.wikipedia.org/wiki/Magnet>
+Q) What are typical applications of hard and soft magnetic materials?
+A) Permanent magnets are made from "hard" ferromagnetic materials. A coil in a electromagnet is normally wrapped around a core of "soft" ferromagnetic material such as steel, which greatly enhances the magnetic field produced by the coil.
+<http://en.wikipedia.org/wiki/Magnet>
+Q) How does the initial permeability of a ferromagnetic material change with magnetic strength?
+A) Initial permeability is the ratio for small magnetization of initially demagnetized material.
+ui = B / (u0 * H) for very small H
+<http://en.wikipedia.org/wiki/Ferromagnetic_material_properties>
+Q) What is the role of silicon in Si-Fe ferromagnetic materials?
+A) Elemental silicon is added to molten cast iron as ferrosilicon or silicocalcium alloys to improve performance in casting thin sections and to prevent the formation of cementite where exposed to outside air.
+<http://en.wikipedia.org/wiki/Silicon>

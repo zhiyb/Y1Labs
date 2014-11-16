@@ -1,0 +1,13 @@
+F	= L * I * B
+T	= Kt * Ia
+Pout	= T * omega
+Vemf	= Kv * omega
+Pin	= Vemf * Ia
+T	= F * r * cos(theta)
+T	= 2 * F * r * cos(theta)
+	= 2 * F * r
+F	= N * L * I * B
+T	= 2 * N * L * B * r * I
+K	= 2 * N * L * B * r
+	= N * A * B
+	= Lf * If

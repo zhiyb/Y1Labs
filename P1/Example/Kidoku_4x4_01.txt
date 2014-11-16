@@ -1,0 +1,13 @@
+# Original Sudoku
+4 X   X X
+X X   X 1
+
+X X   3 X
+X 2   X X
+
+# Solved Sudoku
+4 1   2 3
+2 3   4 1
+
+1 4   3 2
+3 2   1 4

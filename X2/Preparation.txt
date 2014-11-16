@@ -1,0 +1,193 @@
+﻿2.1 Construction
+1. What is the typical composition of solder?
+Alloy (tin-lead, lead free, silver bearing, etc.)
+http://store.curiousinventor.com/guides/how_to_solder/kind_of_solder
+
+2. Why is an alloy used for solder?
+Alloy metals have some interesting properties that are different from the metals comprising them. In tin-lead solder, the mixture has a lower melting point than either lead or tin alone, and the melting point varies depending on the portions. The mixture that yields the lowest melting point is called eutectic. This is also the only mix where all the constituents melt and freeze at the same temperature.
+http://store.curiousinventor.com/guides/how_to_solder/kind_of_solder
+
+3. What is flux and why is it important?
+Almost all metals oxidize in air and form an oxidized layer that prevents solder from wetting and bonding to them.
+Flux is basically a weak acid that removes oxides so that solder can adhere to the metal, and is so essential to the soldering process that it's built into the core of common wire-solder. It also helps the solder spread out (reduces surface tension), transfer heat, and acts as a protective blanket to keep oxygen away from the metal until solder displaces it.
+http://store.curiousinventor.com/guides/how_to_solder/kind_of_solder
+
+4. What is a dry joint and how can it be avoided?
+A joint which is poorly formed is often called a "dry joint". Usually it results from dirt or grease preventing the solder from melting onto the parts properly, and is often noticeable because of the tendency of the solder not to "spread" but to form beads or globules instead, perhaps partially.
+http://www.epemag.wimborne.co.uk/solderfaq.htm
+The component and the pad need to be clean, and use flux and solder iron properly.
+Section 3.5
+After soldering always check your work for any dry joints or solder bridges.
+
+5. What is a solder bridge and how can it be removed?
+A solder bridge is an (unintended) electrical connection between two conductors by means of a small blob of solder. PCB's use solder masks to prevent this from happening.
+http://en.wikipedia.org/wiki/Bridging
+Remove the solder that makes the bridge, and then resolder that part.
+Section 3.4.4:
+Modern PCBs contain a solder mask which helps to minimise the chances of an accidental bridge between two adjacent pads. However, when soldering fine pitch devices it may occur. Use a length of solder wick to absorb the excess solder, by touching the wick and iron over the offending area.
+
+6. What safety precautions should you take when soldering?
+Wear eye protection, as solder has been known to spit (bubble).
+Wear gloves (solder is very HOT).
+Keep your workplace dry when using an electric soldering gun.
+Keep flammable liquids and materials away from the work area.
+Keep your work area clean and clutter free. Never leave a hot iron or gun unattended.
+http://wiki.answers.com/Q/What_safety_precautions_should_be_taken_while_soldering
+Section 3.5
+Always wear the protective eye glasses provided when soldering to avoid possible solder splashes making contact with your eyes.
+
+7. What is a ground plane and why is it used?
+A ground plane on a printed circuit board (PCB) is a large area or layer of copper foil connected to the circuit's ground point, usually one terminal of the power supply.
+It serves as the return path for current from many different components.
+In multilayer PCBs, it is often a separate layer covering the entire board. This serves to make circuit design easier, allowing the designer to ground any component without having to run additional traces; component leads needing grounding are routed directly through a hole in the board to the ground plane on another layer.
+The large area of copper also conducts the large return currents from many components without significant voltage drops, ensuring that the ground connection of all the components are at the same reference potential.
+In digital and radio frequency PCBs, the major reason for using large ground planes is to reduce electrical noise and interference being coupled from one part of the circuit to another through (ground loops) and crosstalk between adjacent circuit traces.
+http://en.wikipedia.org/wiki/Ground_plane
+Or, can also be used to dissipate heat.
+
+8. What is a thermal relief and why is it helpful?
+A thermal relief pad is a printed circuit board (PCB) pad connected to a copper pour using a thermal connection. It looks like a normal pad with copper "spokes" connecting it to the surrounding copper.
+A thermal connection restricts the heat flow, making the pad easier to solder.
+http://en.wikipedia.org/wiki/Thermal_relief
+
+9. Why is it desirable to have more than a single layer on a PCB?
+Multi-layer printed circuit boards have trace layers inside the board, so it allow for much higher component density.
+http://en.wikipedia.org/wiki/Printed_circuit_board
+
+10. What is a via and what different types are available?
+In printed circuit board, it consists of two pads in corresponding positions on different layers of the board, that are electrically connected by a hole through the board. The hole is made conductive by electroplating, or is lined with a tube or a rivet.
+
+High-density multi-layer PCBs may have microvias:
+Blind vias are exposed only on one side of the board;
+Buried vias connect internal layers without being exposed on either surface;
+Thermal vias carry heat away from power devices and are typically used in arrays of about a dozen.
+
+A via consists of:
+1.Barrel — conductive tube filling the drilled hole
+2.Pad — connects each end of the barrel to the component, plane or trace
+3.Antipad — clearance hole between barrel and no-connect metal layer
+
+A via may be at the edge of the board so that it is cut in half when the board is separated; this is known as a castellated hole and is used for a variety of reasons, including allowing one PCB to be soldered to another in a stack.
+http://en.wikipedia.org/wiki/Via_(electronics)
+
+2.2 Testing
+1. What precautions should be taken when handling ICs and why?
+CMOS devices can be damaged by voltages as low as 250V, so the first precaution to observe is to ensure that the handler is not carrying a static charge.
+It is however wise to earth one's body momentarily before handling a CMOS IC and this can be done by touching the metal casing of any earthed electrical appliance which is plugged in but not switched on e.g. a cold soldering iron.
+A sensible way to ensure that devices are not damaged is to use IC holders and to insert the devices only when construction is complete and the layout has been checked.
+http://baec.tripod.com/DEC90/comp.htm
+
+2. It is possible to insert IC1 in two different orientations. How do you determine which is the
+correct one?
+IC1(ATMEGA644) is DIP package, so it have a notch that can indicate the orientation and order of pins.
+So make sure the notches on IC1, the DIL and the PCB mark are the same direction.
+http://en.wikipedia.org/wiki/Dual_in-line_package
+
+3. Estimate the voltage drop across the LED (D1) when it is illuminated.
+About 2.1V
+http://www.kitronik.co.uk/files/9513/4003/3379/3502_Green_3mm_LED.pdf
+
+4. Estimate the expected current range drawn by the circuit for the following configurations:
+IC1		JP3	Min-current	Max-current
+Not installed	Usr	120uA		About 120uA
+Not installed	Pwr	5.5mA		25mA
+Installed	Usr	6.1mA		31mA
+Installed	Pwr	12mA		31mA
+
+D1: Green LED 3mm	5.45mA - 25mA
+http://www.kitronik.co.uk/files/9513/4003/3379/3502_Green_3mm_LED.pdf
+IC1: ATMEGA644P		Figure 27-2:	3.3V, 12MHz:	About 6mA
+http://www.atmel.com/Images/Atmel-8011-8-bit-AVR-Microcontroller-ATmega164P-324P-644P_datasheet.pdf
+IC2: MCP1825S		120uA - 500mA
+http://ww1.microchip.com/downloads/en/devicedoc/22056b.pdf
+
+5. Determine suitable values for the voltage and current limits of your bench PSU for testing the voltage regulator in section 4.3 and testing themicrocontroller current drain in section 4.7.
+Section	Voltage limit/V	Current limit/mA
+4.3	6.0		0.2 - 1
+4.7	6.0		31
+
+6. A multimeter and an oscilloscope can both be used for measuring voltages. What is the accuracy of each instrument? How do you decide which one to use?
+Accuracy of the multimeter in the toolkit is 400mV(±0.5%+3) - 600V(±0.8%+3).
+Accuracy for TDS2000 oscilloscope is:
+DC Measurement Accuracy, Average Acquisition Mode
+Average of ≥ 16 waveforms with vertical position at zero
+±(3% × reading + 0.1 div + 1 mV) when 10 mV/div or greater is selected
+https://secure.ecs.soton.ac.uk/notes/ellabs/databook/equip/TDS2000_User_Manual.pdf
+For measuring stable voltage, a multimeter is suitable as it has directly reading.
+For measuring various voltage, an oscilloscope is suitable as it can show the change clearly by graph.
+
+7. What is a x10 oscilloscope probe, and how is it used?
+Above 10MHz even a 50R source will be affected. Examples of such effects are reduced amplitude of sinusoidal signals, increased rise/fall times of digital signals, attenuated overshoot on digital signals and reduction or elimination of glitches in digital signals. To reduce this capacitive loading, the probe is made resistive, by potential divide.
+The probe forms a potential divider with the cable/scope input circuit such that the signal presented to the scope itself differs from the source signal only in amplitude - the waveform will be identical.
+With this 9:1 ratio of resistance, V(input) will be exactly 1/10 of V(source). Therefore the scope will display only 1/10 of the source voltage, and the displayed reading will need to be multiplied by 10. This is why these probes are referred to as x10 probes.
+https://secure.ecs.soton.ac.uk/notes/ellabs/databook/equip/x10_probe.pdf
+
+8. Describe the different triggering modes offered by the Oscilloscope.
+The oscilloscope provides three types of triggers: Edge, Video, and Pulse Width.
+The source can be any signal connected to a channel BNC, to the EXT TRIG BNC or the AC power line (available only with Edge triggers).
+Can use the Trigger Coupling option to determine which part of the signal will pass to the trigger circuit.
+https://secure.ecs.soton.ac.uk/notes/ellabs/databook/equip/TDS2000_User_Manual.pdf
+
+9. An oscilloscope and a logic analyser can both be used for observing digital waveforms. How do you decide which one to use?
+When using more than four channels to trigger on signals, a logic analyzer is the ideal tool.
+https://secure.ecs.soton.ac.uk/notes/ellabs/databook/equip/xyzscope.pdf
+Typical digital oscilloscopes have up to four signal inputs.
+Logic analyzers have between 34 and 136 channels. Each channel inputs one digital signal. Some complex system designs require thousands of input channels. Appropriately-scaled logic analyzers are available for those tasks as well.
+When you need to know specific signal amplitudes, power, current, or phase values, or edge measurements such as rise times, an oscilloscope is the right instrument.
+The logic analyzer captures and displays many signals at once, and analyzes their timing relationships. For debugging elusive, intermittent problems, some logic analyzers can detect glitches, as well as setup-and-hold time violations. During software/hardware integration, logic analyzers trace the execution of the embedded software and analyze the efficiency of the program's execution. Some logic analyzers correlate the source code with specific hardware activities in your design.
+http://www.ttiedu.com/articles/tektronix_logic.pdf
+
+10. Which protocols are understood by the Saleae logic analyser.
+The Saleae software supports the following protocols:
+asynchronous serial, I2C, SPI, CAN, 1-Wire, UNI/O, I2S/PCM, MP Mode 9-bit Serial (i.e. Multidrop and Multiprocessor mod), Manchester, JTAG, LIN, DMX-512, Atmel SWI, MDIO, BiSS C, Simple Parallel, PS/2 Keyboard/Mouse, HMDI CEC, and USB 1.1.
+http://www.saleae.com/logic/
+
+2.3 Microcontrollers
+1. What is a microcontroller?
+A microcontroller is a small computer on a single integrated circuit containing a processor core, memory, and programmable input/output peripherals.
+Microcontrollers are designed for embedded applications, in contrast to the microprocessors used in personal computers or other general purpose applications.
+http://en.wikipedia.org/wiki/Microcontroller
+
+2. What is the difference between volatile and non-volatile memory?
+Volatile memory retains its contents while powered, but when power is interrupted stored data is immediately lost.
+Non-volatile memory is memory that maintains its content even when unpowered.
+http://en.wikipedia.org/wiki/Volatile_memory
+
+3. How much memory does the ATMEGA644P have for storing programs?
+The ATmega644P contains 64K bytes On-chip In-System Reprogrammable Flash memory for program storage.
+http://www.atmel.com/Images/Atmel-8011-8-bit-AVR-Microcontroller-ATmega164P-324P-644P_datasheet.pdf
+
+4. Describe the purpose of the fuses in the microcontroller.
+Data sheet: 24.2 Fuse Bits (p.294)
+http://www.atmel.com/Images/Atmel-8011-8-bit-AVR-Microcontroller-ATmega164P-324P-644P_datasheet.pdf
+Fuse Bits is used to set the behavior and settings of the microcontroller.
+
+5. Calculate the new values for the low and high fuses in section 4.8.3 and 4.8.4.
+Section	Low	High
+4.8.3	0xE7	0x99
+4.8.4	0xE7	0x98
+Data sheet: 24.2 Fuse Bits (p.294)
+http://www.atmel.com/Images/Atmel-8011-8-bit-AVR-Microcontroller-ATmega164P-324P-644P_datasheet.pdf
+
+6. What is a boot loader?
+The Boot Loader program can use any available data interface and associated protocol to read code and write (program) that code into the Flash memory, or read the code from the program memory. The program code within the Boot Loader section has the capability to write into the entire Flash, including the Boot Loader memory. The Boot Loader can thus even modify itself, and it can also erase itself from the code if the feature is not needed anymore. The size of the Boot Loader memory is configurable with fuses and the Boot Loader has two separate sets of Boot Lock bits which can be set independently. This gives the user a unique flexibility to select different levels of protection.
+Data sheet: 23.2 Boot Loader Support -> Overview (p.276)
+http://www.atmel.com/Images/Atmel-8011-8-bit-AVR-Microcontroller-ATmega164P-324P-644P_datasheet.pdf
+
+7. When you have completed building your Il Matto why is it not possible to install the boot loader over the USB interface?
+The ability of using the USB interface to write program code into the flash is provided by the boot loader, and there isn't any boot loader exist after building the Il Matto, so it is impossible to write code into flash through USB interface without a boot loader.
+
+8. Which commands do you need to execute to compile the C source files into hex files suitable for downloading to the Il Matto board?
+Compile:
+avr-gcc -mmcu=atmega644p -DF_CPU=12000000 -Wall -Os prog.c -o prog.elf
+Link:
+avr-objcopy -O ihex prog.elf prog.hex
+
+9. Which AVRDUDE command do you need to execute to download a program over the USB interface?
+avrdude -c usbasp -p m644p -U flash:w:prog.hex
+
+10. How many instructions per second does the microcontroller execute?
+1 MIPS (Million instructions per second) per MHz
+So 12MIPS for 12MHz
+Data sheet: 2. Overview (p.4)
+http://www.atmel.com/Images/Atmel-8011-8-bit-AVR-Microcontroller-ATmega164P-324P-644P_datasheet.pdf

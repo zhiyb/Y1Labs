@@ -1,0 +1,41 @@
+# Original Sudoku
+X X 3 E   4 X 7 X   X X X 8   X X X F
+F X X 6   X X 2 X   X X X X   1 E 5 X
+X X X B   6 A X X   X 5 X 9   X X X X
+X X X 5   F X X 0   C 3 X 2   X X X X
+
+8 X X X   X B X X   X F 4 X   X C D X
+B X 5 X   X X 1 4   X 2 X X   F A E X
+E 4 X X   8 F X A   B D 3 X   2 6 7 5
+X X F X   X 6 X X   X X X X   X X X B
+
+2 X X X   X X X X   X X B X   X 8 X X
+4 1 B D   X C 3 2   6 X 8 F   X X A E
+X C A 8   X X 5 X   3 1 X X   X D X 2
+X E 7 X   X 4 9 X   X X A X   X X X 1
+
+X X X X   E X A 9   4 X X D   5 X X X
+X X X X   3 X F X   X X 0 C   A X X X
+X 9 C 7   X X X X   X B X X   E X X 8
+5 X X X   1 X X X   X 9 X A   0 2 X X
+
+# Solved Sudoku
+D 2 3 E   4 5 7 1   0 A 6 8   B 9 C F
+F 0 8 6   C 9 2 3   7 4 D B   1 E 5 A
+C 7 4 B   6 A 8 E   F 5 1 9   D 0 2 3
+9 A 1 5   F D B 0   C 3 E 2   7 4 8 6
+
+8 6 2 1   9 B E 5   A F 4 7   3 C D 0
+B D 5 0   7 3 1 4   8 2 C 6   F A E 9
+E 4 9 C   8 F 0 A   B D 3 1   2 6 7 5
+7 3 F A   2 6 D C   9 0 5 E   8 1 4 B
+
+2 5 0 9   A 1 6 F   D E B 4   C 8 3 7
+4 1 B D   0 C 3 2   6 7 8 F   9 5 A E
+6 C A 8   B E 5 7   3 1 9 0   4 D F 2
+3 E 7 F   D 4 9 8   2 C A 5   6 B 0 1
+
+0 B 6 2   E 7 A 9   4 8 F D   5 3 1 C
+1 8 E 4   3 2 F B   5 6 0 C   A 7 9 D
+A 9 C 7   5 0 4 D   1 B 2 3   E F 6 8
+5 F D 3   1 8 C 6   E 9 7 A   0 2 B 4
