@@ -3,7 +3,6 @@
 #include <QPainter>
 #include <QMessageBox>
 #include <QFile>
-#include <QFont>
 #include <QFileDialog>
 #include <QTextStream>
 
