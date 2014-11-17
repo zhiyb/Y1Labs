@@ -3,6 +3,7 @@
 #include <QPainter>
 #include <QMessageBox>
 #include <QFile>
+#include <QFont>
 #include <QFileDialog>
 #include <QTextStream>
 
@@ -52,7 +53,7 @@ void SudokuWidget::paintEvent(QPaintEvent *)
 			painter.drawRect(x, y, side - 1, side - 1);
 		}
 	QFont f(font());
-	f.setPixelSize(0.9 * side);
+	f.setPixelSize(0.8 * side);
 	setFont(f);
 	painter.setPen(Qt::blue);
 	for (std::vector<int>::size_type i = 0; i < res.size(); i++) {
@@ -158,8 +159,6 @@ void SudokuWidget::save(void)
 
 void SudokuWidget::solve(void)
 {
-	//delete s;
-	//s = new Sudoku(n);
 	s->solve(pre);
 	QMessageBox::information(this, "Solved", QString("Got %1 solution(s)").arg(s->solutions().size()));
 }
