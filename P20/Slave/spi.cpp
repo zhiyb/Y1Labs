@@ -25,15 +25,3 @@ uint8_t spi::transfer(const uint8_t value)
 	while(!(SPSR & _BV(SPIF)));
 	return SPDR;
 }
-
-void spi::send(const uint8_t value)
-{
-	//while(!(SPSR & _BV(SPIF)));	// <- Will cause problem
-	SPDR = value;
-}
-
-uint8_t spi::recv(void)
-{
-	while(!(SPSR & _BV(SPIF)));
-	return SPDR;
-}
