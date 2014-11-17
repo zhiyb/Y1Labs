@@ -8,6 +8,7 @@ PREFIX	:= arm-linux-gnueabihf-
 CC	:= $(PREFIX)g++
 STRIP	+= && $(PREFIX)strip
 CFLAGS	:= -g -I. -Wall -Wsign-compare -Werror -Os
+CPPFLAGS	:= -g -I. -Wall -Wsign-compare -Werror -Os -std=c++11
 LDFLAGS	:= -g -L. -lbcm2835
 
 .PHONE: all
@@ -29,7 +30,7 @@ $(TARGET): subdirs $(OBJS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 %.o: %.cpp
-	$(CC) -c -o $@ $< $(CFLAGS)
+	$(CC) -c -o $@ $< $(CPPFLAGS)
 
 .PHONE: clean
 clean:
