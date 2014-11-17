@@ -16,12 +16,12 @@ template <typename T> void randomFill(const unsigned int size, const T& min, con
 template <typename T> void randomFill(const unsigned int size, const T& min, const T& max, default_random_engine& dre, vector<vector<T> >& m);
 template <typename T> void randomFillTridiagonal(const unsigned int size, const T& min, const T& max, default_random_engine& dre, vector<vector<T> >& m);
 
-template <typename T> void TridiagonalSolve(const vector<vector<T> >& m, vector<T> R, vector<T>& L);
+template <typename T> void TridiagonalSolve(const vector<vector<T>>& m, vector<T> R, vector<T>& L);
 
 template <typename T> ostream& operator<<(ostream& out, const vector<vector<T> >& m);
 template <typename T> ostream& operator<<(ostream& out, const vector<T>& v);
 
-template <typename T> void TridiagonalSolve(const vector<vector<T> >& m, vector<T> R, vector<T>& L)
+template <typename T> void TridiagonalSolve(const vector<vector<T>>& m, vector<T> R, vector<T>& L)
 {
 	T E = m[0][1];
 	vector<T> D, c(m.size());
