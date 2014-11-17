@@ -7,15 +7,6 @@ DancingLinks::DancingLinks()
 
 DancingLinks::~DancingLinks()
 {
-	/*Node *c = h->to(Node::Right);
-	do {
-		Node *r = c;
-		c = c->to(Node::Right);
-		do {
-			r = r->to(Node::Up);
-			delete r->to(Node::Down);
-		} while (r != c->to(Node::Left));
-	} while (c != h);*/
 	delete h;
 }
 
@@ -25,7 +16,6 @@ void DancingLinks::solve(void)
 	solve(res);
 }
 
-#include <iostream>
 bool DancingLinks::solve(std::vector<int>& res)
 {
 	if (h == h->to(Node::Right))
@@ -47,18 +37,17 @@ bool DancingLinks::solve(std::vector<int>& res)
 	col->coverColumn();
 	for (col = col->to(Node::Down); col->value() >= 0; col = col->to(Node::Down)) {
 		res.push_back(col->value());
-		//col->coverRow();
 		for (Node *c = col->to(Node::Right); c != col; c = c->to(Node::Right))
 			c->coverColumn();
 		bool next = solve(res);
 		res.pop_back();		// Backtrack
+		col->unCoverRow();
 		for (Node *c = col->to(Node::Left); c != col; c = c->to(Node::Left))
 			c->unCoverColumn();
 		if (!next) {
 			col->unCoverColumn();
 			return false;
 		}
-		//col->unCoverRow();
 	}
 	col->unCoverColumn();
 	return true;

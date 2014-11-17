@@ -52,7 +52,7 @@ void SudokuWidget::paintEvent(QPaintEvent *)
 			painter.drawRect(x, y, side - 1, side - 1);
 		}
 	QFont f(font());
-	f.setPixelSize(0.8 * side);
+	f.setPixelSize(0.9 * side);
 	setFont(f);
 	painter.setPen(Qt::blue);
 	for (std::vector<int>::size_type i = 0; i < res.size(); i++) {
