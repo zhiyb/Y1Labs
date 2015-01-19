@@ -16,8 +16,8 @@
 void init_tone(void);
 void tone(uint16_t frequency);
 
-int main(void) {
-
+int main(void)
+{
 	TFT_init();
 	stdout = tftout();
 	init_tone();

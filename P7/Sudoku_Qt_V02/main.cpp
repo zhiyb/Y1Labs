@@ -4,7 +4,7 @@
 #include <QInputDialog>
 #include <QtCore>
 
-#define MAXSIZE	8
+#define MAXSIZE	6
 
 using namespace std;
 
