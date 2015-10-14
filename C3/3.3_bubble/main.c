@@ -3,12 +3,13 @@
 #include "floatarray.h"
 #include "sort.h"
 
-#define aSize(a) (sizeof(a) / sizeof(a[0]))
-#define DIS(c) {puts(#c); c;}
+#define SIZE	5
+#define aSize(a)	(sizeof(a) / sizeof(a[0]))
+#define DIS(c)	{puts(#c); c;}
 
 int main(void)
 {
-	float fArray[3], oArray[3];
+	float fArray[SIZE], oArray[SIZE];
 
 	puts("Initialise randam value calculation...");
 	DIS(randInit());
