@@ -7,15 +7,15 @@ void printArray(const unsigned int size, const double *array)
 {
 	unsigned int i;
 	for (i = 0; i < size; i++)
-		printf("Value of (double)array[%d]: %g\n", i, *(array + i));
+		printf("Value of (double)array[%d]: %g\n", i, *array++);
 }
 
 void averageArray(const unsigned int size, const double *array)
 {
 	int s = size;
-	double sum;
+	double sum = 0;
 	while (s--)
-		sum += *(array + s);
+		sum += *array++;
 	printf("Value of average: %g\n", sum / size);
 }
 

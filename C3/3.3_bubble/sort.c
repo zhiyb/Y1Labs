@@ -1,36 +1,34 @@
 void sort(const int size, const float *input, float *output)
 {
 	int swap, i;
-	float tmp;
 
-	// First, copy input to output
+	// First, copy input buffer to output buffer
 	for (i = 0; i < size; i++)
 		*(output + i) = *(input + i);
 
-	// Sort output
+	// Sort output buffer
 	do {
 		swap = 0;
 		for (i = 0; i < size - 1; i++)
 			if (*(output + i) > *(output + i + 1)) {
-				tmp = *(output + i);
+				float tmp = *(output + i);
 				*(output + i) = *(output + i + 1);
 				*(output + i + 1) = tmp;
-				swap++;
+				swap = 1;
 			}
 	} while (swap);
 }
 
-// Alternative method
-void bSort(const int size, float *output)
+// Alternative method (recursive)
+static void bSort(const int size, float *output)
 {
 	int swap, i;
-	float tmp;
 	for (i = 0; i < size - 1; i++)
 		if (*(output + i) > *(output + i + 1)) {
-			tmp = *(output + i);
+			float tmp = *(output + i);
 			*(output + i) = *(output + i + 1);
 			*(output + i + 1) = tmp;
-			swap++;
+			swap = 1;
 		}
 	if (swap)
 		bSort(size, output);
@@ -40,10 +38,10 @@ void bubbleSort(const int size, const float *input, float *output)
 {
 	int i;
 
-	// First, copy input to output
+	// First, copy input buffer to output buffer
 	for (i = 0; i < size; i++)
 		*(output + i) = *(input + i);
 
-	// Sort output
+	// Sort output buffer
 	bSort(size, output);
 }

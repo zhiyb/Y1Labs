@@ -11,7 +11,7 @@ void double2Zero(double *p)
 void doubleArray2Zero(unsigned int size, double *p)
 {
 	while (size--)
-		*(p + size) = 0;
+		*p++ = 0;
 }
 
 int main(void)
