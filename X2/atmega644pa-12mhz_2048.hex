@@ -1,116 +1,131 @@
-<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN' 'http://www.w3.org/TR/html4/loose.dtd'>
-<html lang='en'>
-<head>
-  <title>ECS - ECS Intranet Login</title>
-  <link rel='stylesheet' media='screen' href='https://secure.ecs.soton.ac.uk/style/css.php' type='text/css' >
-  <link rel='stylesheet' media='screen' href='https://secure.ecs.soton.ac.uk/style/css/intranet.css' type='text/css' >
-  <link rel='stylesheet' media='print' href='https://secure.ecs.soton.ac.uk/style/css.php?mode=print' type='text/css' >
-
-  <script language='javascript' type='text/javascript' src='/tinymce/tiny_mce/tiny_mce.js'></script>
-  <script language='javascript' type='text/javascript'>
-tinyMCE.init({
-	mode : 'textareas',
-	theme : 'advanced',
-	plugins : 'table,layer',
-	theme_advanced_toolbar_location : 'top',
-	theme_advanced_buttons1_add_before : 'cut,copy,paste,separator',
-	theme_advanced_buttons3_add_before : 'tablecontrols,separator',
-	editor_selector : 'mceEditor'
-});
-</script>
-<script type='text/javascript'>
-	var isSecure = true;
-</script>
-</head>
-<body id="page_Login">
-<div class='noPrint' id='header'>
-
-<div id="title" style="margin: 0; padding: 0; "><table cellpadding="0" cellspacing="0" border="0" width="100%">
-<tr><td align="left" valign="top" rowspan="2"><a href="http://www.ecs.soton.ac.uk/">
-<img src="https://secure.ecs.soton.ac.uk/style/images/header/ecs_logo.gif" width="235" height="97" alt="Electronics and Computer Science - a school of the University of Southampton" border="0"/></a></td>
-<td align="right" valign="top">
-<table cellpadding="0" border="0" cellspacing="0"><tr><td>
-  <div id="search" class="noPrint"> 
-    <form action="https://secure.ecs.soton.ac.uk/gizmos/search.php">
-      <table cellpadding="0" border="0" cellspacing="4"><tr style="vertical-align: top">
-      <td><span class="label">
-	  <img src="https://secure.ecs.soton.ac.uk/style/images/header/search.gif" width="10" height="10" alt="Search" />
-      <label for="q">Search </label> 
-      </span> </td>
-<td>
-      <input type="hidden" name="type" value="knowledgebase" />
-      <input id="q" style="border:0px;padding:1px" name="q" type="text" value="Enter keywords here" onfocus="javascript:if (this.value=='Enter keywords here') this.value='';"/> <br/><a style="color: #eeeeee" href="/search/advanced/">Advanced search</a>
-</td>
-<td>
-      <input name="s" value="1" type="hidden" />
-      <input type="image" src="https://secure.ecs.soton.ac.uk/style/images/header/go.gif" alt="Start Search" /> 
-</td>
-</tr></table>
-    </form>  
-  </div> 
-</td>
-
-</tr></table>
-</td>
-</tr>
-<tr>
-<td valign="bottom" align="right" width="100%">
-<ul class="ecsmenu">
-<li style="margin-right:1em; border-right: solid 1px black;"><a href="http://www.ecs.soton.ac.uk/"><span>ECS Home</span></a><span class="hide"> |</span></li>
-<li><a href="https://secure.ecs.soton.ac.uk/"><span>ECS Intranet</span></a><span class="hide"> |</span></li>
-<li><a href="http://go.soton.ac.uk/fpse"><span>FPSE Sharepoint</span></a>
-<li><a href="https://secure.ecs.soton.ac.uk/kb/"><span>Knowledgebase</span></a><span class="hide"> |</span></li>
-<li><a href="https://secure.ecs.soton.ac.uk/ug/"><span>UG &amp; MSc</span></a>
-<li><a href="https://secure.ecs.soton.ac.uk/staff/"><span>Staff &amp; PG</span></a>
-<li><a href="https://secure.ecs.soton.ac.uk/mail/"><span>Webmail</span></a>
-</ul>
-</td>
-</tr></table>
-</div>
-<hr class="hide" /><div id='breadcrumbs' class='noPrint'><div class='login' style='float:right'><a href='https://secure.ecs.soton.ac.uk/login/?uri=%2Flogin%2F&amp;args=reason%3Dlogin%26uri%3D%252Fnotes%252Fellabs%252F1%252Fx2%252Fatmega644pa-12mhz_2048.hex'>Login to ECS Intranet</a></div><span class='hide'>Breadcrumb trail: </span><ul>
-<li><a href="http://www.soton.ac.uk/">University of Southampton</a> &gt; </li><li><a href="http://www.ecs.soton.ac.uk/">ECS</a> &gt; </li><li><a href="https://secure.ecs.soton.ac.uk/">Intranet</a> &gt; </li><li class="current">Login</li></ul></div>
-</div><div id='content'>
-<h1><span class='noScreen'>ECS Intranet:<br /></span>ECS Intranet Login</h1><div class='pageContentBars0'><hr class='hide' />
-<a name='contentJump'></a>
-<!-- Main Page Begins -->
-
-<form action="https://secure.ecs.soton.ac.uk/login/now/index.php" method="POST" >
-<table>
-  <tr>
-    <td style="text-align:right">Username:</td>
-    <td><input style='border: solid 1px #888' id = 'ecslogin_username' name="ecslogin_username" /></td>
-  </tr>
-  <tr>
-    <td style="text-align:right">Password:</td>
-    <td><input style='border: solid 1px #888' name="ecslogin_password" type="password" /></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>
-<div><label><input value='weak' checked='checked' type='radio' name='ecslogin_security' /> Login works from any IP Address (less secure)</label></div>
-<div><label><input value='strong' type='radio' name='ecslogin_security' /> Login works from your current IP address only (more secure)</label></div>
-</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td>
-      <input type="hidden" name="ecslogin_uri" value="/notes/ellabs/1/x2/atmega644pa-12mhz_2048.hex" />
-      <input type="hidden" name="ecslogin_args" value="" />
-      <input type="submit" value="Log in...." />
-    </td>
-  </tr>
-</table>
-</form>
-
-<script type="text/javascript">document.getElementById('ecslogin_username').focus()</script>
-<br style='clear: both;' />
-<!-- Main Page Ends -->
-</div>
-<br style='clear: both;' />
-<hr /></div>
-
-<div id="footer" class="noPrint"> 
-<p><a href="https://secure.ecs.soton.ac.uk/cgi-bin/jbug/systems?newbug=1&folder=WWW&subject=ECS+-+ECS+Intranet+Login&details=https%3A%2F%2Fsecure.ecs.soton.ac.uk%2Flogin%2F%3Freason%3Dlogin%26uri%3D%252Fnotes%252Fellabs%252F1%252Fx2%252Fatmega644pa-12mhz_2048.hex%0A%0ADescribe+the+issue+with+the+page...%0A%0A&return_url=https%3A%2F%2Fsecure.ecs.soton.ac.uk%2Flogin%2F%3Freason%3Dlogin%26uri%3D%252Fnotes%252Fellabs%252F1%252Fx2%252Fatmega644pa-12mhz_2048.hex">Is this page inaccurate, incomplete or out of date? Do you have a suggestion?</a></p>
-<p>&copy; University of Southampton</p>
-</div> 
-</body></html>
+:10F8000066C000007FC000007DC0000095C0000001
+:10F8100079C0000077C0000075C0000073C0000010
+:10F8200071C000006FC000006DC000006BC0000020
+:10F8300069C0000067C0000065C0000063C0000030
+:10F8400061C000005FC000005DC000005BC0000040
+:10F8500059C0000057C0000055C0000053C0000050
+:10F8600051C000004FC000004DC000004BC0000060
+:10F8700049C0000047C0000045C00000040309045F
+:10F880001C037700770077002E0066006900730084
+:10F89000630068006C002E00640065000E035500D4
+:10F8A0005300420061007300700012011001FF005C
+:10F8B0000008C016DC050201010200010902120065
+:10F8C0000101008032090400000000000000112442
+:10F8D0001FBECFEFD0E1DEBFCDBF11E0A0E0B1E0B1
+:10F8E000EEEFFFEF02C005900D92A230B107D9F7FD
+:10F8F00011E0A2E0B1E001C01D92A733B107E1F72A
+:10F9000048D17BC37DCFA82FB92F80E090E041E0A4
+:10F9100050EA609530E009C02D9182279795879530
+:10F9200010F084279527305EC8F36F5FA8F3089521
+:10F93000EADF8D939D930895CF93CFB7CF93C3956F
+:10F940001B9BE9F71B9B09C01B9B07C01B9B05C0AA
+:10F950001B9B03C01B9B01C0A1C0DF93C0911A0178
+:10F96000DD27CF5DDE4F1B9B02C0DF91EBCF2F93D6
+:10F970000F931F9303B12FEF03FB20F94F933F9396
+:10F9800013B14FEF012703FB21F93BE031C04E7F5C
+:10F99000012F13B1216028C0102F4D7F226000007D
+:10F9A00003B129C04B7F2460012F000013B12BC08D
+:10F9B00013B1477F28602AC04F7E03B120612CC05D
+:10F9C0004F7D13B120622FC04F7B03B1206432C042
+:10F9D000422703B149934FEF0000102713FB20F992
+:10F9E00013B11C70C9F1297F91F2012703FB21F9A2
+:10F9F00003B1237F89F2315058F1102713FB22F90C
+:10FA000013B1277E79F2012703FB23F92F7C81F2C2
+:10FA100003B1102713FB24F92F7971F200C013B141
+:10FA2000012703FB25F92F7359F200C003B11027FA
+:10FA300013FB26F9223040F200C013B1012703FB6B
+:10FA400027F9243028F64F77206813B10000F9CF4A
+:10FA500014E01CBB002717C03B503195C31BD0409E
+:10FA600014E01CBB0881033CE9F00B34D9F0209171
+:10FA700018011981110F1213EDCF093641F10D3222
+:10FA800011F0013E39F700931F013F914F911F91F3
+:10FA90000F912F91DF91CCB3C2FD51CFCF91CFBF4A
+:10FAA000CF91189520911F01222379F310911D0108
+:10FAB000112311F5343012F130931D0120931901F7
+:10FAC00010911A013BE0311B30931A0117C00091CD
+:10FAD0001D0101308CF40AE53091000134FD10C0A5
+:10FAE00000930001CDE0D1E00FC02795A8F451505C
+:10FAF000A9F4220F0000F9CF4AE503C042ED01C08E
+:10FB0000432FC4E1D0E032E014B11C602B9A14B949
+:10FB100005B120E41CE05F93012756E005B9279565
+:10FB200020F4515021F4220FF9CF012756E00000B4
+:10FB30003B5A05B9D0F2279528F4515029F4220FE9
+:10FB40000000F9CF012756E0279505B920F4515060
+:10FB500021F4220FF9CF012756E02991332305B96B
+:10FB600021F6037F10911E01110FC651D04005B937
+:10FB700011F01093180114E01CBB086014B1137F3E
+:10FB8000402F437F5F9100C000C005B914B945B94B
+:10FB90007CCF84B78A7009F417C214BE88E10FB60F
+:10FBA000F89480936000109260000FBE81E085BFE2
+:10FBB00082E085BF80916900806380936900EA9A42
+:10FBC000239A20E004C088EB9BE00197F1F72150D5
+:10FBD000D1F723987894279A2F9ACC24DD249091FA
+:10FBE0001D01935097FD5DC180911A010CE010E05A
+:10FBF000081B11090F5D1E4F809119018D3209F00C
+:10FC0000E1C0983009F04BC183EC80930D018AE587
+:10FC10008093000110920601D8013C91832F8076D9
+:10FC200011962C91882309F458C082E091E09093BA
+:10FC30001C0180931B01233059F5F894D8011296CA
+:10FC4000EC911297E03351F41496EC91EE0FE670BC
+:10FC5000F0E081E280935700E49115C0E03521F097
+:10FC6000E83511F0E0E00FC0EF70E695E695E69517
+:10FC7000D80113968C9186958695E82BF0E089E063
+:10FC800080935700E4917894E093050194E08FC04D
+:10FC9000253011F491E08BC0822F84508630B0F46F
+:10FCA000F8018281938190930901809308012930A2
+:10FCB00091F0968190930A018581827080930B0167
+:10FCC00020930C0137FD6EC02FEF6DC0223019F468
+:10FCD00081E08093070190E06AC0D80112968C9170
+:10FCE00010921601222331F41092170126E131E01F
+:10FCF00092E053C0253019F480931E014BC026308A
+:10FD0000C9F5F8018381813019F48AEA98EF04C0BB
+:10FD1000823041F48CEB98EF90931C0180931B018F
+:10FD200092E124C0833009F5D80112968C91882382
+:10FD300041F48CE798EF90931C0180931B0194E0B1
+:10FD400015C0813041F480E898EF90931C018093B6
+:10FD50001B019CE10BC0823041F48CE998EF909339
+:10FD60001C0180931B019EE001C090E080E4809321
+:10FD700006011DC0283019F420E231E009C0293005
+:10FD800019F48093200106C02A3021F426E131E0E5
+:10FD900091E003C026E131E090E030931C01209314
+:10FDA0001B0105C0292F80E88093060108C0F801D7
+:10FDB0008781882319F42681291708F0292F209399
+:10FDC00001016DC08091060187FF69C080910A0121
+:10FDD000F92E891708F4F82E8F1980930A01EE2462
+:10FDE000882311F4EE24E39480910C01873010F401
+:10FDF00030E04EC0E8010CC08091080190910901EB
+:10FE00000196909309018093080101976991E7D0C9
+:10FE10009E01201B2F1580F33EC0E0910801F09158
+:10FE20000901EE2349F4F89483E080935700E895A4
+:10FE3000789407B600FCFDCF3E5FF894D8018D9111
+:10FE40009D918D0121E00C0120935700E89511242C
+:10FE50007894CF010296909309018093080188233A
+:10FE600041F0EE20A9F03F1598F080910B01882316
+:10FE700079F0F89485E080935700E895789407B678
+:10FE800000FCFDCFF89481E180935700E8957894C9
+:10FE90003F1508F4C2CFEE2011F01092010110922C
+:10FEA0001D018091000184FF71C0809101018F3F8D
+:10FEB00009F46CC0182F893008F018E0811B80937A
+:10FEC000010180910D0198E8892780930D0111238C
+:10FED00009F44AC08091060187FF2AC080910A0177
+:10FEE000811708F4182F811B80930A01CEE0D1E01E
+:10FEF00017C080910C01E0910801F0910901873051
+:10FF000018F0CF0164D001C084918883219680913C
+:10FF100008019091090101969093090180930801CD
+:10FF2000812F90E0825F9E4FC817D90711F71AC042
+:10FF3000E0911B01F0911C0186FF09C0912FAEE0FA
+:10FF4000B1E084918D9331969150D9F707C0912FEC
+:10FF5000AEE0B1E081918D939150E1F7F0931C01F7
+:10FF6000E0931B01193060F48EE091E0612FE0DC3A
+:10FF7000612F6C5F6C3041F08FEF8093010104C002
+:10FF80008FEF809301016EE16093000194E183B1F2
+:10FF90008C7031F49150D9F710921E011092180113
+:10FFA00080910701882309F41ACECA9409F017CE6C
+:10FFB000DA9409F014CE2F982798F8941DBA10926D
+:10FFC000690081E085BF15BE0C9400000895F99981
+:10FFD000FECF92BD81BDF89A992780B50895262F4E
+:10FFE000F999FECF1FBA92BD81BD20BD0FB6F8941E
+:0EFFF000FA9AF99A0FBE01960895F894FFCF81
+:02FFFE005AFFA8
+:040000030000F80001
+:00000001FF
