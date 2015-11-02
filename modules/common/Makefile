@@ -1,0 +1,2 @@
+# File rules
+INCDIRS	+= $(DIR)
