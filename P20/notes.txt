@@ -1,0 +1,46 @@
+Supervisor notes for P20
+========================
+
+Raspberry Pi SPI
+----------------
+The Pi is configured as the Master
+
+1. Before the SPI port can be used on the Raspberry Pi, it needs to be enabled:
+     sudo vim /etc/modprobe.d/raspi-blacklsit.conf
+	     ... insert a # at the start of the line spi-bcm2708
+	 sudo reboot
+	     ... confirm all is well with 
+	 lsmod
+	     ... you should see spi_bcm2708
+
+2. Compile the file spi.cpp using
+     g++ -o spi spi.cpp
+	     ... all the required files and headers are already in the Qt5 image.
+   See: http://www.raspberry-projects.com/pi/programming-in-c/spi/using-the-spi-interface
+		 
+3. Run the file
+     sudo ./spi
+	     ... this rotates one byte of 0xa5 (165) through the SPI port while enabling device 0
+		 ... you should see 0 as output as the data is simply lost.
+		 
+4. Jumper GPIO10 (MOSI) and GPIO9 (MISO) and run again. See the picture DSC01493.JPG
+     sudo ./spi
+	     ...you should see 165 as output, indicating the data has rotated correctly.
+		 
+Il Matto SPI
+------------
+This must be configured as a slave. You'll need to connect the two data lines (as above)
+clock (GPIO11) and ground, to the Pi. It's all 3.3V so it should be fine. The slave setup 
+is given on the Il Matto Quick Reference: https://secure.ecs.soton.ac.uk/notes/elec1201/IlMattoQR.pdf
+
+
+RC4
+---
+RC4 has an exciting history. The original disclosure of the PRNG and key scheduling is here:
+http://web.archive.org/web/20080404222417/http://cypherpunks.venona.com/date/1994/09/msg00304.html
+
+There are lots of broken implementations. The students should use the _real_ RC4 PRNG and the real
+key scheduling, but are free to use their own technique to mix the session key (received over SPI by
+the Il Matto) with the long-term secure secret key (built into the Il Matto code). Just catenating
+them is known to be a bad idea (see WEP). But then using RC4 is nowadays also known to be a bad idea.
+See: http://www.isg.rhul.ac.uk/tls/
