@@ -10,7 +10,7 @@ public:
 	void codec(unsigned char *buff, const unsigned short length);
 
 private:
-	unsigned short i, j;
+	unsigned char i, j;
 	unsigned char s[256];
 };
 
